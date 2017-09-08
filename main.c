@@ -17,8 +17,8 @@ int main()
     strftime(utc_time_str, 50, "[INFO] UTC Time from API: %T %d/%h/%Y\n", &utc_time);
     strftime(local_time_str, 50, "[INFO] Local Time: %T %d/%h/%Y\n", &local_time);
 
-    printf(utc_time_str);
-    printf(local_time_str);
+    printf("%s", utc_time_str);
+    printf("%s", local_time_str);
 
     // Cleanup and return
     free(weather);
